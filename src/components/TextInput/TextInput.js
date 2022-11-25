@@ -1,3 +1,4 @@
+/*
 import styles from './TextInput.module.scss';
 
 const TextInput = props => {
@@ -5,3 +6,4 @@ const TextInput = props => {
 };
 
 export default TextInput;
+*/

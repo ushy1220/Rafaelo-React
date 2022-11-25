@@ -1,3 +1,4 @@
+/*
 import styles from './SearchForm.module.scss';
 import TextInput from '../TextInput/TextInput';
 import Button from '../Button/Button';
@@ -16,3 +17,4 @@ const SearchForm = () => {
 }
 
 export default SearchForm;
+*/

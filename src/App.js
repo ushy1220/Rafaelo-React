@@ -1,16 +1,17 @@
-import SearchForm from "./components/SearchForm/SearchForm.js";
-import Hero from "./components/Hero/Hero.js";
+//import SearchForm from "./components/SearchForm/SearchForm.js";
+import HeadCarousel from "./components/Carousel/Carousel.js";
 import List from "./components/List/List.js";
 import Container from "./components/Container/Container.js";
 
 const App = () => {
   return (
     <Container>
-      <Hero />
-      <SearchForm />
+      <HeadCarousel />    
       <List />
     </Container>
   );
 };
 
 export default App;
+
+//<SearchForm />

@@ -1,6 +1,6 @@
 @import '../../styles/settings.scss';
 
-.header {
+/*.header {
     background-image: url('http://uploads.kodilla.com/bootcamp/fer/11.react/space.png');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }*/
 
 .title {
     font-size: ($base-size * 2.5);
@@ -37,4 +37,20 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: blue;
+}
+
+.blue {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
 }

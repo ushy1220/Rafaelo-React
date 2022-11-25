@@ -1,0 +1,10 @@
+.carousel {
+    height: 200px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+
+    .carousel {
+        height: 120px;
+    }        
+} 
