@@ -43,6 +43,22 @@
   padding: math.div($base-size, 2) 0;
 }
 
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: blue;
+}
+
+.blue {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
 @media (max-width: 767px) {
   .column {
     width: 100%;

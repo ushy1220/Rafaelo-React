@@ -1,19 +1,18 @@
 import styles from './List.module.scss'
-import Column from '../Column/Column';
+import Columns from '../Column/Column';
 
 const List = () => {
 
     const columns = [
-        {id: 1, title: 'Urodziny', icon: 'gift', bkg: 'yellow'},
-        {id: 2, title: 'Plener Piknik Festyn Dożynki', icon: 'tree', bkg: 'green'},
-        {id: 3, title: 'Rodzinne', icon: '', bkg: 'blue'},
-        {id: 4, title: 'Bal szkolny', icon: '', bkg: 'red'}
+        {id: 1, title: 'Urodziny', icon: 'gift', color: 'yellow'},
+        {id: 2, title: 'Plener Piknik Festyn Dożynki', icon: 'tree', color: 'green'},
+        {id: 3, title: 'Rodzinne', icon: '', color: 'blue'},
+        {id: 4, title: 'Bal szkolny', icon: '', color: 'red'}
     ]
-    const className = columns.bkg;
 
     return (
         <section className={styles.columns}>
-            {columns.map(column => <Column styles= {{backgroundColor: className}} key={column.id} title={column.title} icon={column.icon} />)
+            {columns.map(column => <Columns key={column.id} title={column.title} icon={column.icon} />)
             }
         </section>
     )
