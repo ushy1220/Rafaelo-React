@@ -1,21 +1,45 @@
-import React from 'react';
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
+import React, { useState } from 'react';
 import Birthday from './PageBirthday/Birthday';
+import Family from './PageFamily/Family';
+import Plener from './PagePlener/Plener';
+import School from './PageSchool/School';
 import styles from './Tabs.module.scss';
 
 const NavTabs = () => {
+
+  const [activeTab, setActiveTab] = useState("tab1");
+
+  
+  const handleTab1 = () => { //  Functions to handle Tab Switching
+    setActiveTab("tab1"); // update the state to tab1
+  };
+
+  const handleTab2 = () => {
+    setActiveTab("tab2"); // update the state to tab2
+  };
+
+  const handleTab3 = () => {
+    setActiveTab("tab3"); // update the state to tab2
+  };
+
+  const handleTab4 = () => {
+    setActiveTab("tab4"); // update the state to tab2
+  };
+
   return (
     <div className={styles.Tabs}>
       {/* Tab nav */}
       <ul className={styles.nav}>
-        <li>Tab 1</li>
-        <li>Tab 2</li>
-        <li>Tab 3</li>
-        <li>Tab 4</li>
+        <li className={activeTab === "tab1" ? "active" : ""} onClick={handleTab1}>Tab 1</li>
+        <li className={activeTab === "tab2" ? "active" : ""} onClick={handleTab2}>Tab 2</li>
+        <li className={activeTab === "tab3" ? "active" : ""} onClick={handleTab3}>Tab 3</li>
+        <li className={activeTab === "tab4" ? "active" : ""} onClick={handleTab4}>Tab 4</li>
       </ul>
       <div className={styles.outlet}>
-        {/* content will be shown here */}
+        {activeTab === 'tab1' ? <Birthday /> : ""}
+        {activeTab === 'tab2' ? <Family /> : ""} 
+        {activeTab === 'tab3' ? <Plener /> : ""}
+        {activeTab === 'tab4' ? <School /> : ""}
       </div>
     </div>
   )
