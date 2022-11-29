@@ -4,12 +4,14 @@ import HeadCarousel from "./components/Carousel/Carousel.js";
 import Container from "./components/Container/Container.js";
 import Main from "./components/Main/Main.js";
 import NavTabs from "./components/TabComponent/Tabs.js";
+import Opinions from "./components/Opinions/Opinions.js";
 
 const App = () => {
   return (
     <Container>
       <HeadCarousel />    
       <NavTabs />
+      <Opinions />
       <Main />
     </Container>
   );
