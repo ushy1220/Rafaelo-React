@@ -1,14 +1,15 @@
 //import SearchForm from "./components/SearchForm/SearchForm.js";
 import HeadCarousel from "./components/Carousel/Carousel.js";
-import List from "./components/List/List.js";
+//import Column from "./components/Column/Column.js";
 import Container from "./components/Container/Container.js";
 import Main from "./components/Main/Main.js";
+import NavTabs from "./components/TabComponent/Tabs.js";
 
 const App = () => {
   return (
     <Container>
       <HeadCarousel />    
-      <List />
+      <NavTabs />
       <Main />
     </Container>
   );
@@ -16,4 +17,6 @@ const App = () => {
 
 export default App;
 
+
+//Column/Tabs
 //<SearchForm />
