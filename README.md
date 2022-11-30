@@ -71,3 +71,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 yarn add react-tabs
+yarn add @fortawesome/fontawesome-svg-core
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">

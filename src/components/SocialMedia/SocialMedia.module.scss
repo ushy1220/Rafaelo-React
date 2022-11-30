@@ -1,0 +1,36 @@
+#phone {
+    position: fixed;
+    left: 10px;
+    top: 250px;
+    font-size: 70px;
+    color: white;
+}
+
+#facebook {
+    position: fixed;
+    left: 10px;
+    top: 400px;
+    font-size: 70px;
+    color: white;
+}
+
+#instagram {
+    position: fixed;
+    left: 10px;
+    top: 550px;
+    font-size: 70px;
+    color: white;
+}
+
+#tiktok {
+    position: fixed;
+    left: 10px;
+    top: 700px;
+    font-size: 70px;
+    color: white;
+}
+
+.SocialMedia #phone:hover, #facebook:hover, #instagram:hover, #tiktok:hover{
+    font-size: 90px;
+    cursor: pointer;
+}
