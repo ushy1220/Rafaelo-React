@@ -1,5 +1,11 @@
+import styles from './Birthday.module.scss';
+
 const Birthday = () => {
-    return <p>UrodzinyUrodzinyUrodzinyUrodzinyUrodzinyUrodzinyUrodzinyUrodzinyUrodzinyUrodziny </p>
+    return (
+        <div className={styles.container}>
+            <p>UrodzinyUrodzinyUrodzinyUrodzinyUrodzinyUrodzinyUrodzinyUrodzinyUrodzinyUrodziny </p>
+        </div>
+    )
 }
 
 export default Birthday;

@@ -30,10 +30,10 @@ const NavTabs = () => {
     <div className={styles.Tabs}>
       {/* Tab nav */}
       <ul className={styles.nav}>
-        <li className={activeTab === "tab1" ? "active" : ""} onClick={handleTab1}>Tab 1</li>
-        <li className={activeTab === "tab2" ? "active" : ""} onClick={handleTab2}>Tab 2</li>
-        <li className={activeTab === "tab3" ? "active" : ""} onClick={handleTab3}>Tab 3</li>
-        <li className={activeTab === "tab4" ? "active" : ""} onClick={handleTab4}>Tab 4</li>
+        <li className={activeTab === "tab1" ? "active" : ""} onClick={handleTab1}>URODZINY</li>
+        <li className={activeTab === "tab2" ? "active" : ""} onClick={handleTab2}>RODZINNE</li>
+        <li className={activeTab === "tab3" ? "active" : ""} onClick={handleTab3}>PLENER</li>
+        <li className={activeTab === "tab4" ? "active" : ""} onClick={handleTab4}>BAL SZKOLNY</li>
       </ul>
       <div className={styles.outlet}>
         {activeTab === 'tab1' ? <Birthday /> : ""}
