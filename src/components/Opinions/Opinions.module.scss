@@ -1,8 +1,18 @@
 .carousel {
+    display: block;
     height: 300px;
     width: 75%;
-    border: 2px solid white;
     margin: 10px auto;
+}
+
+.item {
+    max-height: 300px;
+}
+
+.img {
+    display: block;
+
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
