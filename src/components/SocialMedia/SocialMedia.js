@@ -1,7 +1,6 @@
-
 import styles from './SocialMedia.module.scss';
 
-const SocialMedia = props => {
+const SocialMedia = () => {
     return(
         <div className={styles.SocialMedia}>
             <a href="506 772 862"><i className="fa-solid fa-phone" id={styles.phone}></i></a>

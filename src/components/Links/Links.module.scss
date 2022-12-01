@@ -1,41 +1,37 @@
-.SocialMedia {
-    height: 100vh;
-    position: absolute;
-}
-
-#phone {
+#birthday {
     position: fixed;
-    left: 20px;
+    right: 20px;
     top: 100px;
     font-size: 70px;
-    color: white;
+    color: rgb(255, 253, 68);
     z-index: 2;
+    filter: grayscale(30%);
 }
 
-#facebook {
+#family {
     position: fixed;
-    left: 20px;
+    right: 20px;
     top: 250px;
     font-size: 70px;
-    color: white;
+    color: rgb(109, 255, 98);
     z-index: 2;
 }
 
-#instagram {
+#plener {
     position: fixed;
-    left: 20px;
+    right: 20px;
     top: 400px;
     font-size: 70px;
-    color: white;
+    color: rgb(37, 48, 254);
     z-index: 2;
 }
 
-#tiktok {
+#school {
     position: fixed;
-    left: 20px;
+    right: 20px;
     top: 550px;
     font-size: 70px;
-    color: white;
+    color: rgb(254, 37, 37);
     z-index: 2;
 }
 
