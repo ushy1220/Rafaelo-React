@@ -1,46 +1,138 @@
-.footer {
-    height: 150px;
-    background-color: rgb(40, 50, 70);
-}
-
 @import '../../styles/settings.scss';
 
 .container {
     border: 1px solid white;
-    height: 500px;
+    height: 700px;
     width: 100%;
     background-color: rgb(44, 55, 77);
+    border: 2px solid yellowgreen;
 }
 
 .form {
-    height: 450px;
-    width: 400px;
-    justify-content: center;
-    margin-top: 20px;
-    margin-left: 20vh;
-    border: 1px solid black;
+    display: block;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    min-width: 250px;
+	max-width: 850px;
+    height: 500px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
     text-align: center;
-    background-color: grey;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    background: #26313B;
+    border-radius: 20px;
+}
+
+.left{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 75%;
+    width: 50%;
+    float: left;
+    justify-content: space-around;
+    margin: 3% auto;
+    margin-bottom: 25px;
 }
 
 .title {
     margin-top: 15px;
 }
 
-input {
-    width: 90%;
-    border: 1px solid black;
+.left h4 {
+    margin: 7px auto;
 }
 
-textarea {
+.left input {
+    padding: 5px;
+    width: 40%;
+    border: 1px solid #ccc;
+    background-color: #26313B;
+    color: white;
+    margin: 2px auto;
+}
+
+input:required {
+    border-color: rgba(255, 99 ,71, 0.6);
+    outline-color: rgb(255, 99, 71);
+}
+
+.left textarea {
     width: 90%;
     height: 50%;
     border: 1px solid black;
+    background-color: #26313B;
+    color: white;
+    margin: 2px auto;
 }
 
-.button {
-    height: 40px;
-    width: 80px;
-    background-color: greenyellow;
+.left textarea:required {
+    border-color: rgba(255, 99 ,71, 0.6);
+    outline-color: rgb(255, 99, 71);
+}
+
+.reset {
+    height: 30px;
+    width: 100px;
+    background-color: #eb4d4b;
     box-shadow: inset 0 0 0.3em black;
+    margin: 5px auto;
+}
+
+.agreements{
+    height: 75%;
+    width: 45%;
+    float: right;
+    overflow-y: auto;
+    margin: 3% auto;
+    margin-right: 4%;
+}
+
+.agreements input{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.agreements span {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.agreements div {
+    margin-top: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c7ecee; 
+    border-radius: 10px;
+}
+
+.buttonDiv {
+    display: inline-block;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.send {
+    display: block;
+    height: 100%;
+    width: 40%;
+    background-color: #6ab04c;
+    box-shadow: inset 0 0 0.3em black;
+    margin: auto auto;
+    border-radius: 20px;
+}
+
+.footer {
+    height: 100px;
 }
