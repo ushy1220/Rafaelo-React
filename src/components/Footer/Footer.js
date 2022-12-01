@@ -30,9 +30,12 @@ const Footer = () => {
                 <div className={styles.buttonDiv}>
                     <button type='submit' className={styles.send}>Wyślij</button>  
                 </div>
-                
             </form>        
-            <footer className={styles.footer}></footer>  
+            <footer className={styles.footer}>
+                <p className={styles.author}>Stronę wykonał Michał Bielecki</p>  
+                <p className={styles.update}>Ostatnia aktualizacja strony: 1.12.2022</p> 
+                <p className={styles.rights}>Wszelkie prawa zastrzeżone</p> 
+            </footer>  
         </div>
     )
 }

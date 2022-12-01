@@ -1,11 +1,8 @@
 @import '../../styles/settings.scss';
 
 .container {
-    border: 1px solid white;
-    height: 700px;
     width: 100%;
     background-color: rgb(44, 55, 77);
-    border: 2px solid yellowgreen;
 }
 
 .form {
@@ -135,4 +132,25 @@ input:required {
 
 .footer {
     height: 100px;
+    box-shadow: 0 0 1em #535c68;
+    margin-top: 30px;
+    padding: 25px;
+}
+
+.footer p {
+    display: inline;
+    font-size: 20px;
+}
+
+.footer .author {
+    float: left;
+}
+
+.footer .update {
+    display: inline;
+    margin-left: 200px;
+}
+
+.footer .rights {
+    float: right;
 }
