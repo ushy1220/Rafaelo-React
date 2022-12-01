@@ -8,3 +8,32 @@
     font-size: large;   
     filter: grayscale(30%);
 }
+
+.container:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    width: 65%;
+    height: 210px;
+    background-color: rgb(255, 253, 68);
+    left: -86px;
+    top: -56px;
+}
+
+.container:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 50%;
+    height: 110px;
+    background-color: rgb(255, 253, 68);
+    right: -5px;
+    top: -36px;
+} 
+
+/*
+background-color: rgb(44, 55, 77) ciemny
+ background-color: rgb(255, 253, 68) zolty
+*/
