@@ -1,12 +1,38 @@
 .container {
+    display: block;
     height: 800px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: auto auto;
-    font-size: large;
-    background-color: rgb(109, 255, 98);
-    z-index: 2;
-    box-shadow: inset 0px 31px 28px -10px rgb(255, 253, 68);
+    margin-top: 170px;
 }
 
+.splashMain {
+    display: block;
+    position: absolute;
+    height: 800px;
+    width: 850px;
+    background-repeat: no-repeat;
+    background-image:url('https://i.postimg.cc/HnR8P0Ks/1-max.png');
+    background-size: cover;
+    z-index: 1;
+}
+
+.moreInfo {
+    height: 330px;
+    width: 350px;
+    float: right;
+    background-image: url('https://i.postimg.cc/wBgmGYg1/ma-y-Plener.png');
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.moreInfo:hover {
+    height: 370px;
+    width: 400px;
+}
+
+.moreInfo button{
+    width: 100%;
+    height: 100%;
+    margin: 25px 25px;
+    background: none;
+    border: none;
+}

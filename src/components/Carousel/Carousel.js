@@ -7,8 +7,8 @@ const HeadCarousel = () => {
     <Carousel className={styles.carousel}>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
+          className="d-block w-50 m-auto fir"
+          src="https://i.postimg.cc/j2MnjdS0/rafaelobezt-a.png"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -18,8 +18,8 @@ const HeadCarousel = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
+          className="d-block w-100 m-auto sec"
+          src="https://i.postimg.cc/vDFQtJB2/rafaelo1.png"
           alt="Second slide"
         />
 
@@ -30,7 +30,7 @@ const HeadCarousel = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 th"
           src="holder.js/800x400?text=Third slide&bg=20232a"
           alt="Third slide"
         />

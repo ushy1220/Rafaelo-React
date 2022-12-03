@@ -9,16 +9,18 @@ import Family from "./components/SecFamily/Family.js";
 import Plener from "./components/SecPlener/Plener.js";
 import School from "./components/SecSchool/School.js";
 import Links from "./components/Links/Links.js";
+import Snow from "./components/Weather/Snow/Snow.js";
 
 const App = () => {
   return (
     <Container>
+      <Snow />
       <SocialMedia />
       <Links />
       <HeadCarousel /> 
       <Birthday />
-      <Family />
       <Plener />
+      <Family />
       <School />
       <Opinions />
       <CooperatedWith />

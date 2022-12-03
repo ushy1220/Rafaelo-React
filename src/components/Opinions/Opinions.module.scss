@@ -1,3 +1,10 @@
+.container {
+    margin: auto auto;
+    margin-top: 650px;
+    width: 80%;
+    display: block;
+}
+
 .carousel {
     display: block;
     height: 400px;
@@ -6,12 +13,11 @@
 }
 
 .item {
-    max-height: 300px;
+    height: 100%;
 }
 
 .img {
     display: block;
-
     margin: 0 auto;
 }
 
