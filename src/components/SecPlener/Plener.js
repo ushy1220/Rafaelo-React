@@ -4,10 +4,9 @@ const Plener = () => {
     return (
         <div className={styles.container} id="plener">
             <div className={styles.moreInfo}>
-                <button></button>
+                <a href='https://www.facebook.com/'>galeria</a>
             </div>
             <div className={styles.splashMain}></div> 
-            <image className={styles.image}></image>
         </div>
     )
 }

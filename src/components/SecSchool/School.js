@@ -4,10 +4,9 @@ const School = () => {
     return (
         <div className={styles.container} id="school">
             <div className={styles.moreInfo}>
-                <button></button>
+                <a href='https://www.facebook.com/'>galeria</a>
             </div>
             <div className={styles.splashMain}>
-
             </div>
         </div>
     )

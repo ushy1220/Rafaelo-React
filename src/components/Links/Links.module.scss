@@ -10,12 +10,21 @@
     position: absolute;
     margin: auto auto;
     top: 30px;
-    color: antiquewhite; text-shadow: black 0.2em 0.2em 0.1em;
+    color: antiquewhite; 
+    text-shadow: black 0.2em 0.2em 0.1em;
     z-index: 3;
     width: 1234x;
     font-weight: 600;
     font-family: 'Nerko One';
     font-size: 38px;
+}
+
+.greenTitle {
+    margin-left: 10px;
+}
+
+.redTitle {
+    margin-top: -20px;
 }
 
 .birthday {
@@ -26,9 +35,7 @@
     z-index: 2;
     text-decoration: none;   
     text-align: center;
-}
-.birthday:hover{
-    font-size: 50px;
+    transition: 1s;
 }
 
 .plener {
@@ -40,28 +47,32 @@
     z-index: 2;
     text-decoration: none;
     text-align: center;
+    transition: 1s;
 }
 
 .family {
     position: fixed;
     right: 10px;
-    bottom: 26%;
+    top: 52%;
     font-size: 20px;
     color: rgb(109, 255, 98);
     z-index: 2;
     text-decoration: none;
     text-align: center;
+    transition: 1s;
+    transition: 1s;
 }
 
 .school {
     position: fixed;
     right: 10px;
-    bottom: 2%;
+    top: 77%;
     font-size: 20px;
     color: rgb(254, 37, 37);
     z-index: 2;
     text-decoration: none;
     text-align: center;
+    transition: 1s;
 }
 
 .yellow, .green, .blue, .red {
@@ -69,4 +80,8 @@
     display: block;
     width: 150px;
     height: auto;
+}
+
+.birthday:hover, .plener:hover, .family:hover, .school:hover {
+    transform: rotate(360deg);
 }

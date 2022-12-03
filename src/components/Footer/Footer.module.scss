@@ -131,26 +131,18 @@ input:required {
 }
 
 .footer {
-    height: 100px;
-    box-shadow: 0 0 1em #535c68;
+    height: auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
     margin-top: 30px;
     padding: 25px;
+    border-radius: 20px;
+    justify-items: center;
+    text-align: center;
+    background: #26313B;
 }
 
 .footer p {
     display: inline;
     font-size: 20px;
-}
-
-.footer .author {
-    float: left;
-}
-
-.footer .update {
-    display: inline;
-    margin-left: 200px;
-}
-
-.footer .rights {
-    float: right;
+    margin: auto auto;
 }

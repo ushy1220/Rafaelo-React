@@ -16,23 +16,27 @@
 }
 
 .moreInfo {
+    float: right;
+    margin-right: 100px;
     height: 330px;
     width: 350px;
-    float: right;
     background-image: url('https://i.postimg.cc/wBgmGYg1/ma-y-Plener.png');
     background-size: cover;
     transition: 0.5s;
+    text-align: center;
 }
 
-.moreInfo:hover {
-    height: 370px;
-    width: 400px;
+.moreInfo a {
+    display: inline-block;
+    margin-top: 120px;
+    text-decoration: none;
+    text-shadow: black 0.2em 0.2em 0.1em;
+    color: white;
+    font-size: 50px;
+    font-family: 'Nerko One';
+    transition: 1s;
 }
 
-.moreInfo button{
-    width: 100%;
-    height: 100%;
-    margin: 25px 25px;
-    background: none;
-    border: none;
+.container .moreInfo a:hover {
+    cursor: pointer;
 }

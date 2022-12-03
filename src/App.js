@@ -10,14 +10,16 @@ import Plener from "./components/SecPlener/Plener.js";
 import School from "./components/SecSchool/School.js";
 import Links from "./components/Links/Links.js";
 import Snow from "./components/Weather/Snow/Snow.js";
+import styles from "./App.module.scss";
 
 const App = () => {
   return (
-    <Container>
-      <Snow />
-      <SocialMedia />
-      <Links />
-      <HeadCarousel /> 
+  <div className={styles.body}>
+    <Snow />
+    <HeadCarousel />
+    <Container>   
+      <SocialMedia />     
+      <Links /> 
       <Birthday />
       <Plener />
       <Family />
@@ -26,11 +28,13 @@ const App = () => {
       <CooperatedWith />
       <Footer />
     </Container>
+  </div>
+    
   );
 };
 
 export default App;
 
-//
+//<Snow />
 //Column/Tabs
 //<SearchForm />

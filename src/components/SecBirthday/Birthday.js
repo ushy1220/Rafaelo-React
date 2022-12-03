@@ -6,7 +6,7 @@ const Birthday = () => {
             <div className={styles.splashMain}>
             </div>
             <div className={styles.moreInfo}>
-                <button></button>
+                <a href='https://www.facebook.com/'>galeria</a>
             </div>
         </div>   
     )
@@ -14,3 +14,7 @@ const Birthday = () => {
 }
 
 export default Birthday;
+
+/*
+
+*/

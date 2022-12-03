@@ -1,6 +1,7 @@
 .carousel {
     height: 100vh;
     margin-top: 0;
+    filter: grayscale(25%);
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
