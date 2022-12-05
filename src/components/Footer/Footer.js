@@ -1,11 +1,20 @@
+import { useState } from 'react';
 import styles from './Footer.module.scss';
 
 const Footer = () => {
+
+    const [name, setName] = useState('');
+    const [mail, setMail] = useState('');
+    const [content, setContent] = useState('');
+    const handleSubmit = e => {
+        e.preventDefault();
+    }
+
     return(
         <div className={styles.container}>
             <form className={styles.form}>
                 <fieldset className={styles.left}>
-                   <h4 className={styles.title}>Imię i nazwisko</h4>
+                    <h4 className={styles.title}>Imię i nazwisko</h4>
                     <input type='text' placeholder='Jan Kowalski' required></input>
                     <h4 className={styles.title}>e-mail</h4>
                     <input type='email' placeholder='exampleEmail@site.com' required></input>
