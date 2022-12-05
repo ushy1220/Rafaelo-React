@@ -11,8 +11,7 @@
 
 .moreInfo {
     display: inline;
-    margin-top: 150px;
-    margin-left: 20px;
+    margin-top: 290px;
     height: 220px;
     width: 375px;
     background-image: url('https://i.postimg.cc/BvxDnQQZ/kleks-Zielony.png');
@@ -26,8 +25,8 @@
 
 .splashMain {
     display: block;
-    height: 600px;
-    width: 700px;
+    height: 100%;
+    width: 815px;
     background-image: url('https://i.postimg.cc/qMCPR9nD/zielona-Plama.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,7 +38,7 @@
     margin-top: 60px;
     text-decoration: none;
     text-shadow: black 0.2em 0.2em 0.1em;
-    color: white;
+    color: antiquewhite; 
     font-size: 50px;
     font-family: 'Nerko One';
     transition: 1s;

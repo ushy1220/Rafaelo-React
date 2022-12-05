@@ -11,8 +11,14 @@ import School from "./components/SecSchool/School.js";
 import Links from "./components/Links/Links.js";
 import Snow from "./components/Weather/Snow/Snow.js";
 import styles from "./App.module.scss";
+import Form from "./components/Form/Form.js";
+//import { useEffect, useState } from 'react';
+//import CircleCursor from './components/CircleCursor/CircleCursor.js';
 
 const App = () => {
+
+ 
+
   return (
   <div className={styles.body}>
     <Snow />
@@ -26,15 +32,30 @@ const App = () => {
       <School />
       <Opinions />
       <CooperatedWith />
-      <Footer />
-    </Container>
+      <Form />
+      <Footer /> 
+    </Container> 
   </div>
     
   );
 };
 
 export default App;
-
+// 
 //<Snow />
 //Column/Tabs
 //<SearchForm />
+
+/*
+
+  const [loaded, setLoaded] = useState(false)
+
+  useEffect(() => {
+    setLoaded(true)
+  }, [])
+
+  return:
+{
+      loaded ? <CircleCursor initial={{circleSize:'5rem',dotSize:'2rem'}} hover={{circleSize:'1rem'}}/> : <br/>
+    }
+*/

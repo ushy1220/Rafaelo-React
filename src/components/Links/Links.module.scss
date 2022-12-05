@@ -36,6 +36,7 @@
     text-decoration: none;   
     text-align: center;
     transition: 1s;
+    z-index: 999;
 }
 
 .plener {
@@ -48,6 +49,7 @@
     text-decoration: none;
     text-align: center;
     transition: 1s;
+    z-index: 999;
 }
 
 .family {
@@ -60,7 +62,7 @@
     text-decoration: none;
     text-align: center;
     transition: 1s;
-    transition: 1s;
+    z-index: 999;
 }
 
 .school {
@@ -73,6 +75,7 @@
     text-decoration: none;
     text-align: center;
     transition: 1s;
+    z-index: 999;
 }
 
 .yellow, .green, .blue, .red {
@@ -84,4 +87,5 @@
 
 .birthday:hover, .plener:hover, .family:hover, .school:hover {
     transform: rotate(360deg);
+    cursor: pointer;
 }

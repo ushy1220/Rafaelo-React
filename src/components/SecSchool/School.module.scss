@@ -2,8 +2,7 @@
     display: block;
     height: 800px;
     width: 900px;    
-    margin-right: 0;
-    margin-top: -90px;
+    margin-top: -50px;
     float: right;
     font-size: large;
 }
@@ -22,10 +21,9 @@
 }
 
 .splashMain {
-    display: block;
-    position: absolute;
-    height: 750px;
-    width: 800px;
+    display: inline-block;
+    height: 100%;
+    width: 850px;
     background-image: url('https://i.postimg.cc/KcfTXqnT/kleksdobryczerwony.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,7 +35,7 @@
     margin-top: 110px;
     text-decoration: none;
     text-shadow: black 0.2em 0.2em 0.1em;
-    color: white;
+    color: antiquewhite; 
     font-size: 50px;
     font-family: 'Nerko One';
     transition: 1s;

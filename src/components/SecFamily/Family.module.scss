@@ -1,14 +1,14 @@
 .container {
     display: block;
     height: 800px;
-    margin-top: 170px;
+    margin-top: 400px;
 }
 
 .splashMain {
     display: block;
     position: absolute;
-    height: 800px;
-    width: 850px;
+    height: 125%;
+    width: 835px;
     background-repeat: no-repeat;
     background-image:url('https://i.postimg.cc/HnR8P0Ks/1-max.png');
     background-size: cover;
@@ -17,7 +17,7 @@
 
 .moreInfo {
     float: right;
-    margin-right: 100px;
+    margin-right: 20px;
     height: 330px;
     width: 350px;
     background-image: url('https://i.postimg.cc/wBgmGYg1/ma-y-Plener.png');
@@ -31,7 +31,7 @@
     margin-top: 120px;
     text-decoration: none;
     text-shadow: black 0.2em 0.2em 0.1em;
-    color: white;
+    color: antiquewhite; 
     font-size: 50px;
     font-family: 'Nerko One';
     transition: 1s;

@@ -5,6 +5,7 @@ import styles from './Opinions.module.scss';
 const Opinions = () => {
     return (
       <section className={styles.container}>
+        <h2>Opinie</h2>
         <Carousel className={styles.carousel}>
           <Carousel.Item className={styles.item}>
             <img

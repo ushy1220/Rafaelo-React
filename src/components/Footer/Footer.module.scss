@@ -2,144 +2,16 @@
 
 .container {
     width: 100%;
+    height: auto;
     background: none;
-}
-
-.form {
-    display: block;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    min-width: 250px;
-	max-width: 850px;
-    height: 500px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
-    text-align: center;
     align-items: center;
-    margin: auto;
-    margin-top: 20px;
-    background: #26313B;
-    border-radius: 20px;
-}
-
-.left{
-    display: flex;
-    flex-flow: column nowrap;
-    height: 75%;
-    width: 50%;
-    float: left;
-    justify-content: space-around;
-    margin: 3% auto;
-}
-
-.title {
-    margin-top: 15px;
-    font-size: 27px;
-    font-family: 'Nerko One';
-}
-
-.left h4 {
-    margin: 7px auto;
-}
-
-.left input {
-    padding: 5px;
-    width: 50%;
-    border: 1px solid #ccc;
-    background-color: #26313B;
-    color: white;
-    margin: 2px auto;
-}
-
-input:required {
-    border-color: rgba(255, 99 ,71, 0.6);
-    outline-color: rgb(255, 99, 71);
-}
-
-.left textarea {
-    width: 90%;
-    height: 50%;
-    border: 1px solid black;
-    background-color: #26313B;
-    color: white;
-    margin: 2px auto;
-}
-
-.left textarea:required {
-    border-color: rgba(255, 99 ,71, 0.6);
-    outline-color: rgb(255, 99, 71);
-}
-
-.reset {
-    height: 30px;
-    width: 100px;
-    background-color: #eb4d4b;
-    box-shadow: inset 0 0 0.3em black;
-    margin: 2px auto;
-    font-family: 'Nerko One';
-    font-size: 19px;
-}
-
-.agreements{
-    height: 75%;
-    width: 45%;
-    float: right;
-    overflow-y: auto;
-    margin: 3% auto;
-    margin-right: 4%;
-}
-
-.agreements input{
-    display: inline;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-
-.agreements span {
-    display: inline;
-    margin: 0;
-    padding: 0;
-}
-
-.agreements div {
-    margin-top: 10px;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #c7ecee; 
-    border-radius: 10px;
-}
-
-.buttonDiv {
-    display: inline-block;
-    height: 60px;
-    width: 100%;
-    margin-bottom: 0;
-}
-
-.send {
-    display: block;
-    height: 100%;
-    width: 40%;
-    background-color: #6ab04c;
-    box-shadow: inset 0 0 0.3em black;
-    margin: auto auto;
-    border-radius: 20px;
-    font-family: 'Nerko One';
-    font-size: 35px;
-    text-shadow: 0.1em 0.1em 0.17em #353b48;
+    justify-content: center;
 }
 
 .footer {
     height: auto;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 25px;
     border-radius: 20px;
     justify-items: center;
