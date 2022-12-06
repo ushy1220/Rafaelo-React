@@ -11,7 +11,7 @@ import School from "./components/SecSchool/School.js";
 import Links from "./components/Links/Links.js";
 import Snow from "./components/Weather/Snow/Snow.js";
 import styles from "./App.module.scss";
-import Form from "./components/Form/Form.js";
+import ColumnList from "./components/MessagesColumnList/ColumnList.js";
 //import { useEffect, useState } from 'react';
 //import CircleCursor from './components/CircleCursor/CircleCursor.js';
 
@@ -32,8 +32,8 @@ const App = () => {
       <School />
       <Opinions />
       <CooperatedWith />
-      <Form />
-      <Footer /> 
+      <ColumnList />
+      <Footer />
     </Container> 
   </div>
     

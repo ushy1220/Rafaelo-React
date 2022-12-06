@@ -1,16 +1,29 @@
 import styles from './Form.module.scss';
+import { useState } from 'react';
 
-const Form = () => {
+const Form = props => {
+
+        const [name, setName] = useState('');
+        const [email, setEmail] = useState('');
+        const [content, setContent] = useState('');
+        const handleSubmit = e => {
+            e.preventDefault();
+            props.action({name: name, email: email, content: content});
+            setName('');
+            setEmail('');
+            setContent('');
+        };
+
     return(
         <div className={styles.container}>
-            <form className={styles.form}>
+            <form className={styles.form} onSubmit={handleSubmit}>
                 <fieldset className={styles.left}>
                     <h4 className={styles.title}>Imię i nazwisko</h4>
-                    <input type='text' placeholder='Jan Kowalski' required></input>
+                    <input type='text' placeholder='Jan Kowalski' value={name} onChange={e => setName(e.target.value)} required></input>
                     <h4 className={styles.title}>e-mail</h4>
-                    <input type='email' placeholder='exampleEmail@site.com' required></input>
+                    <input type='email' placeholder='exampleEmail@site.com' value={email} onChange={e => setEmail(e.target.value)} required></input>
                     <h4 className={styles.title}>Treść wiadomości</h4>
-                    <textarea placeholder='W czym mogę pomóc?' required></textarea>
+                    <textarea placeholder='W czym mogę pomóc?' value={content} onChange={e => setContent(e.target.value)}  required></textarea>
                     <button type='reset' className={styles.reset} >Reset</button> 
                 </fieldset>
                 <fieldset className={styles.agreements}>

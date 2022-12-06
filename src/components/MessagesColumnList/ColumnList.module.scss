@@ -1,0 +1,44 @@
+@import '../../styles/settings.scss';
+
+.list {
+    border: 1px solid white;
+}
+
+.header {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: ($base-size * 15);
+    margin: 0 0 ($base-size * 3) 0;
+    overflow: hidden;
+    border-radius: $radius;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+
+.title {
+    font-size: ($base-size * 2.5);
+    text-transform: uppercase;
+    color: $color-light;
+
+    span {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+        top: -$base-size;
+    }
+}
+
+.description {
+    margin: 0 0 36px;
+    text-align: center;
+}
+
+.columns {
+    display: inline-block;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

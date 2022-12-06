@@ -70,8 +70,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-yarn add react-tabs
 yarn add @fortawesome/fontawesome-svg-core
 yarn add react-snowfall
 
+yarn add shortid
+
+yarn add redux@4.2.0 react-redux@7.2.5
+
+yarn add redux-devtools-extension@2.13.9
+
+yarn add sass --save-dev
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+
+<link href="https://fonts.googleapis.com/css?family=Nerko+One" rel="stylesheet">
