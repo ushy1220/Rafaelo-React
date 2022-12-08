@@ -1,10 +1,18 @@
-import { createStore } from 'redux';
+import { legacy_createStore as createStore} from 'redux'
 const reducer = (state, action) => {
+  if(action.type === 'ADD_COLUMN') return { ...state, messages: [...state.messages, action.newColumn]}
   return state;
 };
 
 const initialState = {
-  messages: []
+  messages: [
+    {
+      id: 1, 
+      name: 'Michal Bielecki', 
+      email: 'przyklad@gmail.com',
+      content: 'przykładowa treść wiadomości'
+    },
+  ]
 };
 
 const store = createStore( //funkcja tworząca magazyn

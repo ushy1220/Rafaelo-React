@@ -12,13 +12,11 @@ import Links from "./components/Links/Links.js";
 import Snow from "./components/Weather/Snow/Snow.js";
 import styles from "./App.module.scss";
 import ColumnList from "./components/MessagesColumnList/ColumnList.js";
+//import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 //import { useEffect, useState } from 'react';
 //import CircleCursor from './components/CircleCursor/CircleCursor.js';
 
 const App = () => {
-
- 
-
   return (
   <div className={styles.body}>
     <Snow />

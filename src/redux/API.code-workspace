@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../VSC"
+		},
+		{
+			"path": "../../../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "VSC",
+		"git.ignoreLimitWarning": true
+	}
+}
