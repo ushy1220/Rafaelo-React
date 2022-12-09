@@ -9,7 +9,6 @@ const List = () => {
 
     return (
         <div className={styles.list}>
-            <Form />
 			<header className={styles.header}>
 				<h2 className={styles.title}>Wiadomości</h2>
 			</header>
@@ -24,9 +23,9 @@ const List = () => {
 export default List;
 
 /*
+const [column, setColumn] => useState('')
 
-
-
+<button type='submit'>DELETE</button>
 
 
 

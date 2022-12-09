@@ -1,3 +1,5 @@
+@import '../../styles/settings.scss';
+
 .container {
     display: block;
     height: 800px;
@@ -37,7 +39,7 @@
     text-shadow: black 0.2em 0.2em 0.1em;
     color: antiquewhite; 
     font-size: 50px;
-    font-family: 'Nerko One';
+    font-family: $font-text;
     transition: 1s;
 }
 

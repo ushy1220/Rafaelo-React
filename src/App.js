@@ -1,25 +1,38 @@
 import HeadCarousel from "./components/Carousel/Carousel.js";
-import Container from "./components/Container/Container.js";
-import Opinions from "./components/Opinions/Opinions.js";
-import Footer from "./components/Footer/Footer.js";
-import CooperatedWith from "./components/CooperatedWith/CooperatedWith.js";
-import SocialMedia from "./components/SocialMedia/SocialMedia.js";
-import Birthday from "./components/SecBirthday/Birthday.js";
-import Family from "./components/SecFamily/Family.js";
-import Plener from "./components/SecPlener/Plener.js";
-import School from "./components/SecSchool/School.js";
-import Links from "./components/Links/Links.js";
 import Snow from "./components/Weather/Snow/Snow.js";
 import styles from "./App.module.scss";
-import ColumnList from "./components/MessagesColumnList/ColumnList.js";
 //import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 //import { useEffect, useState } from 'react';
 //import CircleCursor from './components/CircleCursor/CircleCursor.js';
+import MesBut from './components/AAA/Mes';
+import MessWrapper from "./components/MessWrapper/MessWrapper.js";
+import { Routes, Route } from 'react-router-dom';
+import Home from "./components/Home/Home.js";
+
+const App = () => {
+  return (
+  <main className={styles.body}>
+    <MesBut /> 
+    <Snow />
+    <HeadCarousel />
+    <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/mess" element={<MessWrapper />} />
+        </Routes>
+  </main>
+  );
+};
+
+export default App;
+
+
+/*
 
 const App = () => {
   return (
   <div className={styles.body}>
     <Snow />
+    <Mes />
     <HeadCarousel />
     <Container>   
       <SocialMedia />     
@@ -30,15 +43,26 @@ const App = () => {
       <School />
       <Opinions />
       <CooperatedWith />
-      <ColumnList />
+      <Form />
       <Footer />
+      <MessWrapper />
     </Container> 
   </div>
-    
   );
 };
 
-export default App;
+*/
+
+
+
+
+
+
+
+
+
+
+
 // 
 //<Snow />
 //Column/Tabs

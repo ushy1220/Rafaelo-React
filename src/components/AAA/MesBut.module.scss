@@ -1,0 +1,27 @@
+@import '../../styles/settings.scss';
+
+.mian {
+z-index: 3;
+}
+
+.mess {
+    display: inline-block;
+    width: 50%;
+    font-family: $font-text;
+    color: antiquewhite;
+    background: none;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+.home {
+    display: inline-block;
+    width: 50%;
+    font-family: $font-text;
+    color: antiquewhite;
+    background: none;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+}

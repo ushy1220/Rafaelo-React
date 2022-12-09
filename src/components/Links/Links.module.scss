@@ -1,3 +1,5 @@
+@import '../../styles/settings.scss';
+
 .container {
     position: fixed;
     width: 150px;
@@ -15,7 +17,7 @@
     z-index: 3;
     width: 1234x;
     font-weight: 600;
-    font-family: 'Nerko One';
+    font-family: $font-text;
     font-size: 38px;
 }
 

@@ -1,4 +1,5 @@
-import { legacy_createStore as createStore} from 'redux'
+import { legacy_createStore as createStore} from 'redux';
+
 const reducer = (state, action) => {
   if(action.type === 'ADD_COLUMN') return { ...state, messages: [...state.messages, action.newColumn]}
   return state;
