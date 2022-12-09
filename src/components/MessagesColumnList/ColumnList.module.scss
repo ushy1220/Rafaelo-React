@@ -1,9 +1,5 @@
 @import '../../styles/settings.scss';
 
-.list {
-    border: 1px solid white;
-}
-
 .header {
     background-size: 100%;
     background-repeat: no-repeat;
@@ -15,30 +11,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
 }
 
 .title {
-    font-size: ($base-size * 2.5);
+    font-size: ($base-size * 5.5);
     text-transform: uppercase;
     color: $color-light;
-
-    span {
-        font-size: 75%;
-        line-height: 0;
-        position: relative;
-        vertical-align: baseline;
-        top: -$base-size;
-    }
 }
 
-.description {
-    margin: 0 0 36px;
-    text-align: center;
-}
-
-.columns {
-    display: inline-block;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.messages {
+    padding-left: 100px;
+    padding-right: 150px;
+    border: 1px solid $color-light;
 }

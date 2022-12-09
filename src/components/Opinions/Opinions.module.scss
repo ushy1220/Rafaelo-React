@@ -1,22 +1,24 @@
+@import '../../styles/settings.scss';
+
 .container {
     margin: auto auto;
     margin-top: 700px;
     width: 100%;
     height: auto;
     display: block;
-    background-color: #26313B;
+    background-color: $color-dark;
     border-radius: 20px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 2px 10px $color-shadow;
     text-align: center;
 }
 
 .container h2 {
     display: inline-block;
     width: 100%;
-    font-family: 'Nerko One';
+    font-family: $font-text;
     font-size: 50px;
-    color: antiquewhite;
-    text-shadow: 0.1em 0.1em 0.3em black;
+    color: $color-light;
+    text-shadow: 0.1em 0.1em 0.3em $color-shadow;
     margin-top: 0;
 }
 
@@ -37,7 +39,7 @@
     display: block;
     margin: 0 auto;
     border-radius: 20px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+    box-shadow: 2px 2px 10px $color-shadow;
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {

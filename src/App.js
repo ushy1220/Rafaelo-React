@@ -5,7 +5,7 @@ import styles from "./App.module.scss";
 //import { useEffect, useState } from 'react';
 //import CircleCursor from './components/CircleCursor/CircleCursor.js';
 import MesBut from './components/AAA/Mes';
-import MessWrapper from "./components/MessWrapper/MessWrapper.js";
+import ColumnList from "./components/MessagesColumnList/ColumnList.js";
 import { Routes, Route } from 'react-router-dom';
 import Home from "./components/Home/Home.js";
 
@@ -17,7 +17,7 @@ const App = () => {
     <HeadCarousel />
     <Routes>
           <Route path="/home" element={<Home />} />
-          <Route path="/mess" element={<MessWrapper />} />
+          <Route path="/mess" element={<ColumnList />} />
         </Routes>
   </main>
   );

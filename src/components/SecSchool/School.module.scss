@@ -36,8 +36,8 @@
     display: inline-block;
     margin-top: 110px;
     text-decoration: none;
-    text-shadow: black 0.2em 0.2em 0.1em;
-    color: antiquewhite; 
+    text-shadow: 0.2em 0.2em 0.1em $color-shadow;
+    color: $color-light; 
     font-size: 50px;
     font-family: $font-text;
     transition: 1s;

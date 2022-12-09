@@ -10,7 +10,7 @@ import Opinions from '../Opinions/Opinions';
 import CooperatedWith from '../CooperatedWith/CooperatedWith';
 import Form from '../Form/Form';
 import Footer from '../Footer/Footer';
-import MessWrapper from '../MessWrapper/MessWrapper';
+import ColumnList from '../MessagesColumnList/ColumnList'
 
 const Home = () => {
 
@@ -27,7 +27,7 @@ const Home = () => {
             <CooperatedWith />
             <Form />
         </Container> 
-        <MessWrapper />
+        <ColumnList />
         <Footer />
     </main>
     )

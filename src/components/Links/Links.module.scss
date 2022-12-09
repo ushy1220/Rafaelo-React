@@ -12,8 +12,8 @@
     position: absolute;
     margin: auto auto;
     top: 30px;
-    color: antiquewhite; 
-    text-shadow: black 0.2em 0.2em 0.1em;
+    color: $color-light; 
+    text-shadow: 0.2em 0.2em 0.1em $color-shadow;
     z-index: 3;
     width: 1234x;
     font-weight: 600;
@@ -59,7 +59,7 @@
     right: 10px;
     top: 52%;
     font-size: 20px;
-    color: rgb(109, 255, 98);
+    color: $color-success;
     z-index: 2;
     text-decoration: none;
     text-align: center;
@@ -72,7 +72,7 @@
     right: 10px;
     top: 77%;
     font-size: 20px;
-    color: rgb(254, 37, 37);
+    color: $color-warning;
     z-index: 2;
     text-decoration: none;
     text-align: center;

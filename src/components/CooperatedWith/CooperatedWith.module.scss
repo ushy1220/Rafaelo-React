@@ -1,3 +1,5 @@
+@import '../../styles/settings.scss';
+
 .container {
     height: 300px;
 }
@@ -13,9 +15,9 @@
     display:inline-block;
     font-size: 55px;
     margin-top: 20%;
-    font-family: 'Nerko One';
-    color: antiquewhite;
-    text-shadow: black 0.1em 0.1em 0.2em;
+    font-family: $font-text;
+    color: $color-light;
+    text-shadow: $color-dark 0.1em 0.1em 0.2em;
 }
 
 .right {

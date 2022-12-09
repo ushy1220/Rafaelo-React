@@ -11,7 +11,7 @@ const initialState = {
       id: 1, 
       name: 'Michal Bielecki', 
       email: 'przyklad@gmail.com',
-      content: 'przykładowa treść wiadomości'
+      content: 'przykładowa treść wiadomość'
     },
   ]
 };

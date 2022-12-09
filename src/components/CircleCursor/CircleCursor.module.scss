@@ -7,7 +7,7 @@
     height:3rem;
     width:3rem;
     transform:translate(-50%,-50%);
-    border:2px solid black;
+    border:2px solid $color-dark;
     border-radius:50%;
     transition:0.1s;
 }
@@ -19,7 +19,7 @@
     height:3rem;
     width:3rem;
     transform:translate(-50%,-50%);
-    background:black;
+    background:$color-dark;
     border-radius:50%;
     transition:0.05s;
 }

@@ -32,8 +32,8 @@
     display: inline-block;
     margin-top: 90px;
     text-decoration: none;
-    text-shadow: black 0.2em 0.2em 0.1em;
-    color: white;
+    text-shadow: $color-shadow 0.2em 0.2em 0.1em;
+    color: $color-light;
     font-size: 50px;
     font-family: $font-text;
     transition: 1s;
