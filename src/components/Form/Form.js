@@ -1,9 +1,8 @@
-
 import styles from './Form.module.scss';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 
-const Form = props => {
+const Form = () => {
 
         const [name, setName] = useState('');
         const [email, setEmail] = useState('');
@@ -13,7 +12,7 @@ const Form = props => {
 
         const handleSubmit = e => {
             e.preventDefault();
-            dispatch({ type: 'ADD_COLUMN', newColumn: {name, email, content} });
+            dispatch({ type: 'ADD_COLUMN', payload: {name, email, content} });
             setName('');
             setEmail('');
             setContent('');

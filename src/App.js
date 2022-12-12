@@ -1,5 +1,4 @@
-import HeadCarousel from "./components/Carousel/Carousel.js";
-import Snow from "./components/Weather/Snow/Snow.js";
+
 import styles from "./App.module.scss";
 //import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 //import { useEffect, useState } from 'react';
@@ -13,12 +12,10 @@ const App = () => {
   return (
   <main className={styles.body}>
     <MesBut /> 
-    <Snow />
-    <HeadCarousel />
     <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/mess" element={<ColumnList />} />
-        </Routes>
+      <Route path="/home" element={<Home />} />
+      <Route path="/mess" element={<ColumnList />} />
+    </Routes>
   </main>
   );
 };

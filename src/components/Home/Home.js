@@ -10,12 +10,15 @@ import Opinions from '../Opinions/Opinions';
 import CooperatedWith from '../CooperatedWith/CooperatedWith';
 import Form from '../Form/Form';
 import Footer from '../Footer/Footer';
-import ColumnList from '../MessagesColumnList/ColumnList'
+import HeadCarousel from "../Carousel/Carousel.js";
+import Snow from "../Weather/Snow/Snow.js";
 
 const Home = () => {
 
     return (
     <main className={styles.Home}>
+        <Snow />
+        <HeadCarousel />
         <Container>         
             <SocialMedia />     
             <Links /> 
@@ -27,7 +30,6 @@ const Home = () => {
             <CooperatedWith />
             <Form />
         </Container> 
-        <ColumnList />
         <Footer />
     </main>
     )
