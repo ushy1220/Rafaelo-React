@@ -10,14 +10,6 @@ const Form = () => {
         const [email, setEmail] = useState('');
         const [content, setContent] = useState('');
 
-        
-        /*
-        
-        const sendEmail = e => {
-            e.preventDefault();
-            
-        };  
-        */
         const dispatch = useDispatch();
 
         const handleSubmit = (e) => {
@@ -28,7 +20,7 @@ const Form = () => {
             setEmail('');
             setContent('');
 
-            emailjs.sendForm('service_oa6ztvg', 'template_8angwzr', form.current, 'IKJ3O56SnKbljYjL4')
+            emailjs.sendForm('service_a5ki73j', 'template_8angwzr', form.current, 'IKJ3O56SnKbljYjL4')
                 .then((result) => {
                     console.log(result.text, "SUCCESS: email został wysłany!");
                 }, (error) => {
@@ -47,13 +39,12 @@ const Form = () => {
 
                     <h4 className={styles.title}>e-mail</h4>
 
-                    <input type='email' placeholder='exampleEmail@site.com' name='email' value={email} onChange={e => setEmail(e.target.value)} required></input>
+                    <input type='email' placeholder='example.Email@site.com' name='email' value={email} onChange={e => setEmail(e.target.value)} required></input>
 
                     <h4 className={styles.title}>Treść wiadomości</h4>
 
                     <textarea placeholder='W czym mogę pomóc?' name='content' value={content} onChange={e => setContent(e.target.value)} required></textarea>
-
-                    <button type='reset' className={styles.reset} >Reset</button> 
+ 
                 </fieldset>
                 <fieldset className={styles.agreements}>
                         <div className={styles.first}>
@@ -70,7 +61,8 @@ const Form = () => {
                         </div>  
                 </fieldset>
                 <div className={styles.buttonDiv}>
-                    <button type='submit' className={styles.send}>Wyślij</button>  
+                    <button type='submit' className={styles.send}>Wyślij</button> 
+                    <button type='reset' className={styles.reset} >Reset</button> 
                 </div>
             </form>        
         </div>

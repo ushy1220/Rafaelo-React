@@ -45,7 +45,7 @@
 }
 
 .left input {
-    padding: 5px;
+    padding-left: 5px;
     width: 50%;
     border: 2px solid;
     border-radius: 10px;
@@ -53,6 +53,7 @@
     color: $color-light;
     margin: 2px auto;
     z-index: 3;
+    font-size: 20px;
 }
 
 input:required {
@@ -68,6 +69,7 @@ input:required {
     color: white;
     margin: 2px auto;
     z-index: 3;
+    font-size: 20px;
 }
 
 .left textarea:required {
@@ -79,10 +81,13 @@ input:required {
     width: 100px;
     background-color: $color-warning;
     box-shadow: inset 0 0 0.3em $color-shadow;
-    margin: 2px auto;
     font-family: $font-text;
     font-size: 19px;
     z-index: 3;
+    float: right;
+    margin-right: 270px;
+    margin-bottom: 50px;
+
 }
 
 .agreements{
@@ -133,15 +138,15 @@ input:required {
 }
 
 .send {
-    display: block;
+    display: inline-block;
     height: 100%;
     width: 40%;
     background-color: $color-success;
     box-shadow: inset 0 0 0.3em black;
-    margin: auto auto;
+    margin-left: 60px;
     border-radius: 20px;
     font-family: $font-text;
     font-size: 35px;
     text-shadow: 0.1em 0.1em 0.17em $color-shadow;
-    
+    border: 1px solid white;
 }
