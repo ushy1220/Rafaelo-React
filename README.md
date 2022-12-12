@@ -82,8 +82,9 @@ yarn add redux-devtools-extension@2.13.9
 
 yarn add react-router-dom
 
-yarn add axios
+yarn add @emailjs/browser
 
+yarn add axios
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
 

@@ -3,7 +3,7 @@
 
 .column {
   display: inline-block;
-  width: 48%;
+  width: 80%;
   max-height: 400px;
   background: white;
   margin: 10px;
@@ -16,17 +16,6 @@
 
   &:last-child {
     margin: 0 0 $base-size 0;
-  }
-}
-
-.exit {
-  display: inline;
-  float: right;
-  background: none;
-  border: none;
-  font-size: large;
-  :hover {
-    cursor: pointer;
   }
 }
 

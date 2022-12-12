@@ -32,6 +32,10 @@
     color: $color-light;
 }
 
+.mess {
+    list-style-type: none;      
+}
+
 .messages {
     display: block;
     position: absolute;
@@ -49,3 +53,13 @@
     border-radius: 20px;
     box-shadow: 2px 2px 10px $color-shadow;
 }
+
+.exit {
+    display: inline;
+    font-size: large;
+    height: 100%;
+
+    :hover {
+      cursor: pointer;
+    }
+  }

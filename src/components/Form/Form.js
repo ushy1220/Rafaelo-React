@@ -1,37 +1,58 @@
 import styles from './Form.module.scss';
-import { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
+import emailjs from '@emailjs/browser';
 
 const Form = () => {
+        const form = useRef();
 
         const [name, setName] = useState('');
         const [email, setEmail] = useState('');
         const [content, setContent] = useState('');
 
+        
+        /*
+        
+        const sendEmail = e => {
+            e.preventDefault();
+            
+        };  
+        */
         const dispatch = useDispatch();
 
-        const handleSubmit = e => {
+        const handleSubmit = (e) => {
             e.preventDefault();
+
             dispatch({ type: 'ADD_COLUMN', payload: {name, email, content} });
             setName('');
             setEmail('');
             setContent('');
-        };  
+
+            emailjs.sendForm('service_oa6ztvg', 'template_8angwzr', form.current, 'IKJ3O56SnKbljYjL4')
+                .then((result) => {
+                    console.log(result.text, "SUCCESS: email został wysłany!");
+                }, (error) => {
+                    console.log(error.text, "ERROR: email nie został wysłany!");
+                });
+            e.target.reset();
+        }
 
     return(
         <div className={styles.container}>
-            <form className={styles.form} onSubmit={handleSubmit}>
+            <form className={styles.form} ref={form} onSubmit={handleSubmit}>
                 <fieldset className={styles.left}>
                     <h4 className={styles.title}>Imię i nazwisko</h4>
 
-                    <input type='text' placeholder='Jan Kowalski' value={name} onChange={e => setName(e.target.value)} required></input>
+                    <input type='text' placeholder='Jan Kowalski' name='name' value={name} onChange={e => setName(e.target.value)} required></input>
 
                     <h4 className={styles.title}>e-mail</h4>
 
-                    <input type='email' placeholder='exampleEmail@site.com' value={email} onChange={e => setEmail(e.target.value)} required></input>
+                    <input type='email' placeholder='exampleEmail@site.com' name='email' value={email} onChange={e => setEmail(e.target.value)} required></input>
 
                     <h4 className={styles.title}>Treść wiadomości</h4>
-                    <textarea placeholder='W czym mogę pomóc?' value={content} onChange={e => setContent(e.target.value)} required></textarea>
+
+                    <textarea placeholder='W czym mogę pomóc?' name='content' value={content} onChange={e => setContent(e.target.value)} required></textarea>
+
                     <button type='reset' className={styles.reset} >Reset</button> 
                 </fieldset>
                 <fieldset className={styles.agreements}>
@@ -49,7 +70,7 @@ const Form = () => {
                         </div>  
                 </fieldset>
                 <div className={styles.buttonDiv}>
-                    <button type='submit' className={styles.send} >Wyślij</button>  
+                    <button type='submit' className={styles.send}>Wyślij</button>  
                 </div>
             </form>        
         </div>

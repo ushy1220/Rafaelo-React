@@ -28,11 +28,10 @@ const List = () => {
 					<h2 className={styles.title}>Wiadomości</h2>
 				</header>
 				<section className={styles.messages}>
-					{messages.map(message => <li key={message.id}><Column {...message} />
-					<button className={styles.exit} onClick={() => removeMess(message.id)}>X</button>
+					{messages.map(message => <li key={message.id} className={styles.mess}><Column {...message} />
+					<button className={styles.exit} onClick={() => removeMess(message.id)}>DELETE</button>
 					</li>
-					)}
-					
+					)}	
 				</section>
 			</div>
 		</Container>
