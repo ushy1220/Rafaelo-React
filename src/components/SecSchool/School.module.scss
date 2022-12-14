@@ -1,10 +1,9 @@
 @import '../../styles/settings.scss';
 
 .container {
-    display: block;
+    display: none;
     height: 800px;
     width: 900px;    
-    margin-top: -50px;
     float: right;
     font-size: large;
 }
@@ -16,7 +15,7 @@
     width: 300px;
     background-image: url('https://i.postimg.cc/3xXBNHBB/ma-y-school-bez-T-a.png');
     background-size: cover;
-    margin-left: -280px;
+    margin-left: -1100px;
     margin-top: 100px;
     text-align: center;
     transition: 0.5s;
@@ -46,3 +45,40 @@
 .container .moreInfo a:hover {
     cursor: pointer;
 }
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+
+    .container {
+        display: block;
+        position: static;
+        height: 450px;
+        width: 480px;    
+        float: none;
+        margin: 0 auto;
+    }
+
+    .splashMain {
+        position: relative;
+        height: 450px;
+        width: 480px;
+        margin-left: 0;
+    }
+
+    .moreInfo {
+        display: none;
+    }
+    /*
+    .moreInfo{
+        display: inline-block;
+        position: static;
+        height: 205px;
+        width: 200px;
+        margin-top: 110px;
+        border: 1px solid white;
+    }
+    
+    .moreInfo a {
+        margin-top: 110px;
+        font-size: 50px;
+    }*/
+} 

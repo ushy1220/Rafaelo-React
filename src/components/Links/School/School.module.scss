@@ -1,0 +1,24 @@
+@import '../../../styles/settings.scss';
+
+.schoolHat {
+    height: 350px;
+    margin-top: 200px;
+    transition: 1s;
+}
+
+.red {
+    height: 350px;
+    width: 350px;
+    margin-left: 20px;
+    margin-top: -20px;
+    z-index: 10;
+}
+
+.school .redTitle {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 30px;
+    font-size: 60px;
+    color: $color-light;
+    z-index: 11;
+}

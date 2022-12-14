@@ -3,18 +3,20 @@ import styles from "./App.module.scss";
 //import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 //import { useEffect, useState } from 'react';
 //import CircleCursor from './components/CircleCursor/CircleCursor.js';
-import MesBut from './components/AAA/Mes';
+import Nav from './components/Nav/Nav';
 import ColumnList from "./components/MessagesColumnList/ColumnList.js";
 import { Routes, Route } from 'react-router-dom';
 import Home from "./components/Home/Home.js";
+import AboutUs from './components/AboutUs/AboutUs.js';
 
 const App = () => {
   return (
   <main className={styles.body}>
-    <MesBut /> 
+    <Nav /> 
     <Routes>
-      <Route path="/home" element={<Home />} />
+      <Route path="/home" element={<Home />} default/>
       <Route path="/mess" element={<ColumnList />} />
+      <Route path="/about" element={<AboutUs />} />
     </Routes>
   </main>
   );

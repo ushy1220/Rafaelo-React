@@ -2,7 +2,7 @@
 
 .container {
     margin: auto auto;
-    margin-top: 700px;
+    margin-top: 30px;
     width: 100%;
     height: auto;
     display: block;
@@ -24,7 +24,7 @@
 
 .carousel {
     display: block;
-    height: 400px;
+    height: auto;
     width: 75%;
     margin: 10px auto;
     border-radius: 20px;
@@ -33,18 +33,19 @@
 .item {
     height: 100%;
     border-radius: 20px;
+    margin-bottom: 70px;
 }
 
 .img {
     display: block;
-    margin: 0 auto;
+    margin: auto auto;
     border-radius: 20px;
     box-shadow: 2px 2px 10px $color-shadow;
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
 
-    .carousel {
-        height: 320px;
-    }        
+    .container {
+        display: none;
+    }
 } 

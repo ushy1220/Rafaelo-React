@@ -1,0 +1,28 @@
+@import '../../../styles/settings.scss';
+
+.birthdayHat {
+    height: 350px;
+    transition: 1s;
+}
+
+.birthdayHat .birthday {
+    height: 350px;
+    width: 400px;
+}
+
+.birthday .yellowTitle {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 70px;
+    font-size: 60px;
+    color: $color-light;
+    z-index: 11;
+}
+
+.yellow {
+    height: 350px;
+    width: 350px;
+    margin-left: 20px;
+    margin-top: -20px;
+    z-index: 10;
+}

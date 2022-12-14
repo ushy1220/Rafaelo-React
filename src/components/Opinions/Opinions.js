@@ -10,7 +10,7 @@ const Opinions = () => {
           <Carousel.Item className={styles.item}>
             <img
               className={styles.img}
-              src="https://i.postimg.cc/7Zb9NMN8/opinia1.png"
+              src="https://i.postimg.cc/SskrjLWf/opinia1.png"
               alt="Opinia 1"
             />
           </Carousel.Item>
@@ -18,7 +18,7 @@ const Opinions = () => {
           <Carousel.Item className={styles.item}>
             <img
               className={styles.img}
-              src="https://i.postimg.cc/g0VZyn1b/opinia2.png"
+              src="https://i.postimg.cc/d30jjqN7/opinia2.png"
               alt="Opinia 2"
             />
           </Carousel.Item>
@@ -26,7 +26,7 @@ const Opinions = () => {
           <Carousel.Item className={styles.item}>
             <img
               className={styles.img}
-              src="https://i.postimg.cc/WpWJ7RYz/opinia3.png"
+              src="https://i.postimg.cc/Kc9NvM4t/opinia3.png"
               alt="Opinia 3"
             />
           </Carousel.Item>
@@ -34,7 +34,7 @@ const Opinions = () => {
           <Carousel.Item className={styles.item}>
             <img
               className={styles.img}
-              src="https://i.postimg.cc/d1MKF003/opinia4.png"
+              src="https://i.postimg.cc/J4GQyzBv/opinia4.png"
               alt="Opinia 4"
             />
           </Carousel.Item>
@@ -42,7 +42,7 @@ const Opinions = () => {
           <Carousel.Item className={styles.item}>
             <img
               className={styles.img}
-              src="https://i.postimg.cc/25DwfRDm/opinia5.png"
+              src="https://i.postimg.cc/J4v5jCNn/opinia5.png"
               alt="Opinia 5"
             />
           </Carousel.Item>
@@ -50,18 +50,11 @@ const Opinions = () => {
           <Carousel.Item className={styles.item}>
             <img
               className={styles.img}
-              src="https://i.postimg.cc/kGzQ1Lc0/opinia6.png"
+              src="https://i.postimg.cc/rmV1qVkh/opinia6.png"
               alt="Opinia 6"
             />
           </Carousel.Item>
 
-          <Carousel.Item className={styles.item}>
-            <img
-              className={styles.img}
-              src="https://i.postimg.cc/y6t0H4m5/opinia7.png"
-              alt="Opinia 7"
-            />
-          </Carousel.Item>
         </Carousel>
       </section>
         

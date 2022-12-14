@@ -1,27 +1,42 @@
 @import '../../styles/settings.scss';
 
 .mian {
-z-index: 3;
+    z-index: 3;
+    height: 50px;
 }
 
 .mess {
     display: inline-block;
-    width: 50%;
+    width: 33%;
     font-family: $font-text;
     color: $color-light;
     background: none;
     border: none;
     text-align: center;
     text-decoration: none;
+    font-size: 30px;
 }
 
 .home {
     display: inline-block;
-    width: 50%;
+    width: 33%;
     font-family: $font-text;
     color: $color-light;
     background: none;
     border: none;
     text-align: center;
     text-decoration: none;
+    font-size: 30px;
+}
+
+.about {
+    display: inline-block;
+    width: 33%;
+    font-family: $font-text;
+    color: $color-light;
+    background: none;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
 }

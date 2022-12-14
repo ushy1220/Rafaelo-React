@@ -5,25 +5,25 @@ import styles from './Carousel.module.scss';
 const HeadCarousel = () => {
   return (
     <Carousel className={styles.carousel}>
-      <Carousel.Item>
+      <Carousel.Item className={styles.carouselItem}>
         <img
-          className="d-block w-50 m-auto fir"
-          src="https://i.postimg.cc/j2MnjdS0/rafaelobezt-a.png"
+          className="d-block w-60 m-auto fir"
+          src="https://i.postimg.cc/9fyjhDwZ/Czerwony-raster-highres.png"
           alt="First slide"
         />
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item className={styles.carouselItem}>
         <img
-          className="d-block w-100 m-auto my-5 sec"
-          src="https://i.postimg.cc/vDFQtJB2/rafaelo1.png"
+          className="d-block w-60 m-auto my-5 sec"
+          src=""
           alt="Second slide"
         />
 
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item className={styles.carouselItem}>
         <img
-          className="d-block w-100 th"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
+          className="d-block w-60 m-auto mt-5"
+          src="https://i.postimg.cc/j2MnjdS0/rafaelobezt-a.png"
           alt="Third slide"
         />
 

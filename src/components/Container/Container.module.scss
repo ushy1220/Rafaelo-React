@@ -5,3 +5,11 @@
     background: none;
     margin: 0 auto;
 }
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+
+  .container {
+    width: 480px;
+    height: 3000px;;
+  }     
+} 

@@ -5,7 +5,7 @@ const reducer = (state, action) => {
     case 'ADD_COLUMN':
       return { ...state, messages: [...state.messages, action.payload]}, console.log('Column has been added');
     case 'REMOVE_COLUMN':
-      return { ...state, messages: state.messages.filter(message => message.id !== action.payload)}, console.log('Column adding failed');
+      return { ...state, messages: state.messages.filter(message => message.id !== action.payload)};
   } 
   return state;
 };

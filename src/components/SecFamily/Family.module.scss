@@ -1,25 +1,26 @@
 @import '../../styles/settings.scss';
 
 .container {
-    display: block;
+    display: none;
     height: 800px;
     margin-top: 400px;
 }
 
 .splashMain {
     display: inline-block;
-    position: absolute;
-    height: 800px;
-    width: 870px;
+    height: 850px;
+    width: 900px;
     background-repeat: no-repeat;
     background-image:url('https://i.postimg.cc/HnR8P0Ks/1-max.png');
     background-size: cover;
     z-index: 1;
+    margin-top: -100px;
 }
 
 .moreInfo {
     float: right;
-    margin-right: 20px;
+    margin-top: -220px;
+    margin-right: 120px;
     height: 330px;
     width: 350px;
     background-image: url('https://i.postimg.cc/wBgmGYg1/ma-y-Plener.png');
@@ -44,3 +45,38 @@
 .container > .moreInfo a:hover {
     cursor: pointer;
 }
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+
+    .container {
+        display: block;
+        height: 500px;
+        width: 479px;
+        margin: 0 auto;
+    }
+    
+    .splashMain {
+        display: block;
+        height: 515px;
+        width: 479px;
+        margin-top: -40px;
+    }
+
+    .moreInfo {
+        display: none;
+    }
+    /*
+    .moreInfo {
+        display: block;        
+        height: 250px;
+        width: 270px;
+        margin-top: 300px;
+        margin-left: 190px;
+    }
+    
+    .moreInfo a {
+        display: inline-block;
+        margin-top: 90px;
+        font-size: 40px;
+    }*/
+} 
