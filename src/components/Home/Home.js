@@ -16,9 +16,9 @@ const Home = () => {
     <main className={styles.Home}>
         <Snowfall />
         <HeadCarousel />
+        <SocialMedia />
         <Container>
             <Links />   
-            <SocialMedia />                
             <Opinions />
             <CooperatedWith />
             <Form />

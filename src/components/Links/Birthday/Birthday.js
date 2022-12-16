@@ -5,7 +5,7 @@ import {useState} from 'react';
 const Birthday = () => {
 
     const [rotate, setRotate] = useState(false);
-
+    
     return (
         <motion.div 
             className={styles.birthdayHat}
@@ -14,7 +14,9 @@ const Birthday = () => {
                 setRotate(!rotate);
             }}
             >
-            <a href="#birthday" className={styles.birthday}>
+            <a href="#birthday"
+             className={styles.birthday} 
+             >
                 <h4 className={styles.yellowTitle}>URODZINY</h4>
                 <img
                     src='https://i.postimg.cc/FH22TSfk/cylinder-ty-1.png'

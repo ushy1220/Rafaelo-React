@@ -6,7 +6,7 @@ import Family from './Family/Family';
 import Plener from './Plener/Plener';
 import School from './School/School';
 import styles from './Links.module.scss';
-import BirthdayCard from '../SecBirthday/BirthdayCard';
+import Content from './Content/Content';
 
 const Links = () => {
     return(
@@ -17,15 +17,7 @@ const Links = () => {
                     <Family />
                 </Col>
                 <Col className={styles.middle}>
-                    <BirthdayCard />
-                    <div className={styles.plenerCard}>
-                    </div>
-                    <div className={styles.familyCard}>
-                    </div>
-                    <div className={styles.schoolCard}>
-                    </div>
-                    <div className={styles.noCard}>
-                    </div>
+                    <Content />
                 </Col>
                 <Col className={styles.right}>
                     <Plener />

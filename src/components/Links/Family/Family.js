@@ -9,7 +9,7 @@ const Family = () => {
     return(
         <motion.div 
             className={styles.familyHat}
-            animate={{ rotate: rotate ? 225 : 0}}
+            animate={{ rotate: rotate ? 585 : 0}}
             onClick={() => {
                 setRotate(!rotate);
             }}

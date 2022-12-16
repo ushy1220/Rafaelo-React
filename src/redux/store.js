@@ -6,7 +6,7 @@ const reducer = (state, action) => {
       return { ...state, messages: [...state.messages, action.payload]}, console.log('Column has been added');
     case 'REMOVE_COLUMN':
       return { ...state, messages: state.messages.filter(message => message.id !== action.payload)};
-  } 
+  }
   return state;
 };
 
@@ -36,7 +36,7 @@ const initialState = {
       email: 'przyklad@gmail.com',
       content: 'przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości przykładowa treść wiadomości '
     },
-  ]
+  ],
 };
 
 const store = createStore( //funkcja tworząca magazyn
