@@ -6,18 +6,26 @@ import Family from './Family/Family';
 import Plener from './Plener/Plener';
 import School from './School/School';
 import styles from './Links.module.scss';
-import Content from './Content/Content';
+//import useState from 'react';
+//import clsx from 'clsx';
+//import Content from './Content/Content';
 
 const Links = () => {
+
+    const changeClass = e => {
+        e.preventDefault();
+    }
+
     return(
         <Container className={styles.Container}>
             <Row>
                 <Col className={styles.left}>
-                    <Birthday />
+                    <Birthday action={changeClass}/>
                     <Family />
                 </Col>
                 <Col className={styles.middle}>
-                    <Content />
+                    <div className=''>
+                    </div>
                 </Col>
                 <Col className={styles.right}>
                     <Plener />

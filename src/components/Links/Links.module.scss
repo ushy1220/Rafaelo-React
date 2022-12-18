@@ -1,12 +1,5 @@
 @import '../../styles/settings.scss';
 
-.container {
-    display: block;
-    width: 1200px;
-    height: 900px;
-    margin-left: 0;
-}
-
 .left, .middle, .right {
     height: 900px;
 }
@@ -36,3 +29,49 @@
 
 } 
 */
+
+.change {
+    width: 50px;
+    height: 20px;
+    background-color: white
+}
+
+.default {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    height: 900px;
+    justify-content: center;
+    align-items: center;
+}
+
+.default h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.default button {
+    position: absolute;
+    margin-top: 100px;
+}
+
+
+.birthday {
+    background-color: rgb(217, 255, 0);
+    
+}
+
+.plener {
+    background-color: rgb(9, 255, 0);
+    
+}
+
+.family {
+    background-color: rgb(11, 8, 223);
+    
+}
+
+.school {
+    background-color: rgb(233, 17, 28);
+    
+}

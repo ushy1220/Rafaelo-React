@@ -4,9 +4,9 @@ import styles from './Content.module.scss';
 const Content = () => {
 
     const [isActive, setIsActive] = useState(false);
-
+    console.log(Content.section)
     return (
-        <div className={styles.container}>
+        <section className={styles.container}>
             <div className={styles.default}>
                 <h1>Wybierz kapelusz</h1>
                 <button>JPG</button>
@@ -19,7 +19,7 @@ const Content = () => {
             </div>
             <div className={styles.school}>
             </div>
-        </div>
+        </section>
         
     )
 }
