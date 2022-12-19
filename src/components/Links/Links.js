@@ -1,35 +1,58 @@
 import Container from '../Container/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+
 import Birthday from './Birthday/Birthday';
+import BirthdayCard from './SecBirthday/BirthdayCard'
+
 import Family from './Family/Family';
+import FamilyCard from './SecFamily/FamilyCard';
+
 import Plener from './Plener/Plener';
+import PlenerCard from './SecPlener/PlenerCard';
+
 import School from './School/School';
+import SchoolCard from './SecSchool/SchoolCard';
+
+import NoCard from './NoCard/NoCard'
+
 import styles from './Links.module.scss';
+import { useState } from 'react';
 //import useState from 'react';
 //import clsx from 'clsx';
 //import Content from './Content/Content';
 
+export const CARD_NAMES = {
+    BIRTHDAY: 'birthday',
+    FAMILY: 'family',
+    PLENER: 'plener',
+    SCHOOL: 'school',
+    NOCARD: 'nocard'
+}
+
 const Links = () => {
 
-    const changeClass = e => {
-        e.preventDefault();
-    }
+    const [currentCard, setCurrentCard] = useState(CARD_NAMES.NOCARD)
 
     return(
         <Container className={styles.Container}>
             <Row>
                 <Col className={styles.left}>
-                    <Birthday action={changeClass}/>
-                    <Family />
+                    <Birthday selectCard={setCurrentCard}/>
+                    <Family selectCard={setCurrentCard}/>
                 </Col>
                 <Col className={styles.middle}>
-                    <div className=''>
+                    <div className='' currentCard={currentCard}>
+                        {currentCard === CARD_NAMES.BIRTHDAY && <BirthdayCard /> }
+                        {currentCard === CARD_NAMES.FAMILY && <FamilyCard />}
+                        {currentCard === CARD_NAMES.PLENER && <PlenerCard />}
+                        {currentCard === CARD_NAMES.SCHOOL && <SchoolCard />}
+                        {currentCard === CARD_NAMES.NOCARD && <NoCard />}
                     </div>
                 </Col>
                 <Col className={styles.right}>
-                    <Plener />
-                    <School /> 
+                    <Plener selectCard={setCurrentCard}/>
+                    <School selectCard={setCurrentCard}/> 
                 </Col>
             </Row> 
         </Container>

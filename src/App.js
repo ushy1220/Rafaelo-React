@@ -1,4 +1,33 @@
+import styles from "./App.module.scss";
+import Nav from './components/Nav/Nav';
+import ColumnList from "./components/MessagesColumnList/ColumnList.js";
+import Home from "./components/Home/Home.js";
+import AboutUs from './components/AboutUs/AboutUs.js';
+import { useState } from "react";
 
+export const SCREEN_NAMES = {
+  HOME: 'home',
+  MESS: 'mess',
+  ABOUT: 'about'
+}
+
+const App = () => {
+
+  const [currentScreen, setCurrentScreen] = useState(SCREEN_NAMES.HOME);
+
+  return (
+  <main className={styles.body}>
+    <Nav selectScreen={setCurrentScreen} currentScreen={currentScreen}/> 
+      {currentScreen === SCREEN_NAMES.HOME && <Home />}
+      {currentScreen === SCREEN_NAMES.MESS && <ColumnList />}
+      {currentScreen === SCREEN_NAMES.ABOUT && <AboutUs />}
+  </main>
+  );
+};
+
+export default App;
+
+/*
 import styles from "./App.module.scss";
 //import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 //import { useEffect, useState } from 'react';
@@ -8,13 +37,15 @@ import ColumnList from "./components/MessagesColumnList/ColumnList.js";
 import { Routes, Route } from 'react-router-dom';
 import Home from "./components/Home/Home.js";
 import AboutUs from './components/AboutUs/AboutUs.js';
+import { useState } from "react";
 
 const App = () => {
+
   return (
   <main className={styles.body}>
     <Nav /> 
     <Routes>
-      <Route path="/home" element={<Home />} default/>
+      <Route path="/home" element={<Home />} />
       <Route path="/mess" element={<ColumnList />} />
       <Route path="/about" element={<AboutUs />} />
     </Routes>
@@ -23,33 +54,6 @@ const App = () => {
 };
 
 export default App;
-
-
-/*
-
-const App = () => {
-  return (
-  <div className={styles.body}>
-    <Snow />
-    <Mes />
-    <HeadCarousel />
-    <Container>   
-      <SocialMedia />     
-      <Links /> 
-      <Birthday />
-      <Plener />
-      <Family />
-      <School />
-      <Opinions />
-      <CooperatedWith />
-      <Form />
-      <Footer />
-      <MessWrapper />
-    </Container> 
-  </div>
-  );
-};
-
 */
 
 

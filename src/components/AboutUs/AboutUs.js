@@ -49,15 +49,9 @@ const AboutUs = () => {
             <Tab>
                 <img src='https://i.postimg.cc/5tPrzxcm/1.png' className={styles.image} alt=''/>
             </Tab>
-            <Tab>
-                <img src='https://i.postimg.cc/5tPrzxcm/1.png' className={styles.image} alt=''/>
-            </Tab>
-            <Tab>
-                <img src='https://i.postimg.cc/5tPrzxcm/1.png' className={styles.image} alt=''/>
-            </Tab>
         </TabList>
 
-        <TabPanel>
+        <TabPanel className={styles.panel}>
             <div className={styles.container}>
                 <div className={styles.photoLeft}>
                     <p>przykładowe zdjęcie</p>
@@ -65,13 +59,6 @@ const AboutUs = () => {
                 <div className={styles.description}>
                     <p>przykładowy tekst</p>
                 </div>
-            </div>
-        </TabPanel>
-        
-        <TabPanel>
-            <div className={styles.container}>
-                <div className={styles.photoLeft}></div>
-                <div className={styles.description}></div>
             </div>
         </TabPanel>
         <TabPanel>

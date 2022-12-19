@@ -1,0 +1,24 @@
+.container {
+    width: 415px;
+    height: 900px;
+    border: 1px solid white;
+}
+
+.content {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    height: 900px;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.content button {
+    position: absolute;
+    margin-top: 100px;
+}

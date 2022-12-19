@@ -1,0 +1,29 @@
+@import '../../../styles/settings.scss';
+
+.container {
+    width: 415px;
+    height: 900px;
+    border: 1px solid white;
+}
+
+.content {
+    display: flex;
+    background-color: rgb(210, 224, 10);
+    height: 900px;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.content button {
+    position: absolute;
+    margin-top: 100px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+}

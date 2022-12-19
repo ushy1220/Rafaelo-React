@@ -1,14 +1,11 @@
 import styles from './Birthday.module.scss';
 import { motion } from 'framer-motion'
 import {useState} from 'react';
+import { CARD_NAMES } from '../Links';
 
-const Birthday = props => {
+const Birthday = ({selectCard}) => {
 
     const [rotate, setRotate] = useState(false);
-    const handleClick = e => {
-        e.preventDefault();
-        props.action('')
-    }
     
     return (
         <motion.div 
@@ -18,10 +15,8 @@ const Birthday = props => {
                 setRotate(!rotate);
             }}
             >
-                <button className={styles.button} onClick={handleClick}>
-                    <a href="#birthday"
-                    className={styles.birthday} 
-                    >
+                <button className={styles.button} onClick={() => {selectCard(CARD_NAMES.BIRTHDAY)}}>
+                    <a href="#birthday" className={styles.birthday}>   
                         <h4 className={styles.yellowTitle}>URODZINY</h4>
                         <img
                             src='https://i.postimg.cc/FH22TSfk/cylinder-ty-1.png'
