@@ -34,20 +34,16 @@ const Links = () => {
 
     const [currentCard, setCurrentCard] = useState(CARD_NAMES.NOCARD)
 
-    const handleClick = () => {
-        
-    }
-
     return(
         <Container className={styles.Container}>
             <Row>
                 <Col className={styles.left}>
                     <Birthday selectCard={setCurrentCard}/>
-                    <Family selectCard={setCurrentCard}/>
+                    <Family selectCard={setCurrentCard} />
                 </Col>
                 <Col className={styles.middle}>
-                    <div className='' currentCard={(currentCard, handleClick)}>
-                        {currentCard === CARD_NAMES.BIRTHDAY && <BirthdayCard /> }
+                    <div className='' currentCard={(currentCard)}>
+                        {currentCard === CARD_NAMES.BIRTHDAY && <BirthdayCard duration={1000}/> }
                         {currentCard === CARD_NAMES.FAMILY && <FamilyCard />}
                         {currentCard === CARD_NAMES.PLENER && <PlenerCard />}
                         {currentCard === CARD_NAMES.SCHOOL && <SchoolCard />}
@@ -55,8 +51,8 @@ const Links = () => {
                     </div>
                 </Col>
                 <Col className={styles.right}>
-                    <Plener selectCard={setCurrentCard}/>
-                    <School selectCard={setCurrentCard}/> 
+                    <Plener selectCard={setCurrentCard} />
+                    <School selectCard={setCurrentCard} /> 
                 </Col>
             </Row> 
         </Container>

@@ -10,13 +10,18 @@ const Birthday = ({selectCard}) => {
         setRotate(!rotate);
         setTimeout(() => setRotate(rotate), 3000)
     }
-    
+    const displayCard = () => {
+        setTimeout(() => {
+            selectCard(CARD_NAMES.BIRTHDAY)
+        }, 1500);
+    }
+
     return (
         <motion.div 
             className={styles.birthdayHat}
             animate={{ rotate: rotate ? 315 : 0 }}
             onClick={initRotate}>
-                <button className={styles.button} onClick={() => {selectCard(CARD_NAMES.BIRTHDAY)}}>
+                <button className={styles.button} onClick={displayCard}>
                     <a href="#birthday" className={styles.birthday}>   
                         <h4 className={styles.yellowTitle}>URODZINY</h4>
                         <img

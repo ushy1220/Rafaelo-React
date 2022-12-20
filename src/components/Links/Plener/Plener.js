@@ -10,13 +10,18 @@ const Plener = ({selectCard}) => {
         setRotate(!rotate);
         setTimeout(() => setRotate(rotate), 3000)
     }
+    const displayCard = () => {
+        setTimeout(() => {
+            selectCard(CARD_NAMES.PLENER)
+        }, 1500);
+    }
 
     return(
         <motion.div 
             className={styles.plenerHat}
             animate={{ rotate: rotate ? 405 : 0}}
             onClick={initRotate}>
-            <button className={styles.button} onClick={() => {selectCard(CARD_NAMES.PLENER)}}>
+            <button className={styles.button} onClick={displayCard}>
                 <a href="#plener" className={styles.plener}>
                     <h4 className={styles.greenTitle}>PLENER</h4>
                     <img

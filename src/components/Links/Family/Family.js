@@ -8,7 +8,12 @@ const Family = ({selectCard}) => {
     const [rotate, setRotate] = useState(false);
     const initRotate = () => {
         setRotate(!rotate);
-        setTimeout(() => setRotate(rotate), 3000)
+        setTimeout(() => setRotate(rotate), 2500)
+    }
+    const displayCard = () => {
+        setTimeout(() => {
+            selectCard(CARD_NAMES.FAMILY)
+        }, 1500);
     }
 
     return(
@@ -16,7 +21,7 @@ const Family = ({selectCard}) => {
             className={styles.familyHat}
             animate={{ rotate: rotate ? 585 : 0 }}
             onClick={initRotate}>
-            <button className={styles.button} onClick={() => {selectCard(CARD_NAMES.FAMILY)}}>
+            <button className={styles.button} onClick={displayCard}>
                 <a href="#family" className={styles.family}>
                     <h4 className={styles.blueTitle}>RODZINNE</h4>
                     <img
