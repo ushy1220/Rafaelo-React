@@ -6,15 +6,16 @@ import { CARD_NAMES } from '../Links';
 const Plener = ({selectCard}) => {
 
     const [rotate, setRotate] = useState(false);
-    
+    const initRotate = () => {
+        setRotate(!rotate);
+        setTimeout(() => setRotate(rotate), 3000)
+    }
+
     return(
         <motion.div 
             className={styles.plenerHat}
             animate={{ rotate: rotate ? 405 : 0}}
-            onClick={() => {
-                setRotate(!rotate);
-            }}
-            >
+            onClick={initRotate}>
             <button className={styles.button} onClick={() => {selectCard(CARD_NAMES.PLENER)}}>
                 <a href="#plener" className={styles.plener}>
                     <h4 className={styles.greenTitle}>PLENER</h4>

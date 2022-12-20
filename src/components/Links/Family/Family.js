@@ -6,15 +6,16 @@ import { CARD_NAMES } from '../Links';
 const Family = ({selectCard}) => {
 
     const [rotate, setRotate] = useState(false);
+    const initRotate = () => {
+        setRotate(!rotate);
+        setTimeout(() => setRotate(rotate), 3000)
+    }
 
     return(
-        <motion.div 
+        <motion.div
             className={styles.familyHat}
-            animate={{ rotate: rotate ? 585 : 0}}
-            onClick={() => {
-                setRotate(!rotate);
-            }}
-            >
+            animate={{ rotate: rotate ? 585 : 0 }}
+            onClick={initRotate}>
             <button className={styles.button} onClick={() => {selectCard(CARD_NAMES.FAMILY)}}>
                 <a href="#family" className={styles.family}>
                     <h4 className={styles.blueTitle}>RODZINNE</h4>
@@ -31,3 +32,8 @@ const Family = ({selectCard}) => {
 }
 
 export default Family;
+
+
+/*
+
+*/

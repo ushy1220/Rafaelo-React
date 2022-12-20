@@ -6,15 +6,16 @@ import { CARD_NAMES } from '../Links';
 const Birthday = ({selectCard}) => {
 
     const [rotate, setRotate] = useState(false);
+    const initRotate = () => {
+        setRotate(!rotate);
+        setTimeout(() => setRotate(rotate), 3000)
+    }
     
     return (
         <motion.div 
             className={styles.birthdayHat}
             animate={{ rotate: rotate ? 315 : 0 }}
-            onClick={() => {
-                setRotate(!rotate);
-            }}
-            >
+            onClick={initRotate}>
                 <button className={styles.button} onClick={() => {selectCard(CARD_NAMES.BIRTHDAY)}}>
                     <a href="#birthday" className={styles.birthday}>   
                         <h4 className={styles.yellowTitle}>URODZINY</h4>

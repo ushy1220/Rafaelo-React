@@ -34,6 +34,10 @@ const Links = () => {
 
     const [currentCard, setCurrentCard] = useState(CARD_NAMES.NOCARD)
 
+    const handleClick = () => {
+        
+    }
+
     return(
         <Container className={styles.Container}>
             <Row>
@@ -42,7 +46,7 @@ const Links = () => {
                     <Family selectCard={setCurrentCard}/>
                 </Col>
                 <Col className={styles.middle}>
-                    <div className='' currentCard={currentCard}>
+                    <div className='' currentCard={(currentCard, handleClick)}>
                         {currentCard === CARD_NAMES.BIRTHDAY && <BirthdayCard /> }
                         {currentCard === CARD_NAMES.FAMILY && <FamilyCard />}
                         {currentCard === CARD_NAMES.PLENER && <PlenerCard />}
