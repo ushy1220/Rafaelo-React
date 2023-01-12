@@ -2,22 +2,24 @@ import Container from '../Container/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import Birthday from './Birthday/Birthday';
+import Birthday from './BirthdayHat/Birthday';
 import BirthdayCard from './SecBirthday/BirthdayCard'
 
-import Family from './Family/Family';
+import Family from './FamilyHat/Family';
 import FamilyCard from './SecFamily/FamilyCard';
 
-import Plener from './Plener/Plener';
+import Plener from './PlenerHat/Plener';
 import PlenerCard from './SecPlener/PlenerCard';
 
-import School from './School/School';
+import School from './SchoolHat/School';
 import SchoolCard from './SecSchool/SchoolCard';
 
-import NoCard from './NoCard/NoCard'
+import NoCard from './SecNoCard/NoCard'
 
 import styles from './Links.module.scss';
 import { useState } from 'react';
+
+//import {motion} from 'framer-motion';
 //import useState from 'react';
 //import clsx from 'clsx';
 //import Content from './Content/Content';
@@ -38,12 +40,12 @@ const Links = () => {
         <Container className={styles.Container}>
             <Row>
                 <Col className={styles.left}>
-                    <Birthday selectCard={setCurrentCard}/>
+                    <Birthday selectCard={setCurrentCard} />
                     <Family selectCard={setCurrentCard} />
                 </Col>
                 <Col className={styles.middle}>
-                    <div className='' currentCard={(currentCard)}>
-                        {currentCard === CARD_NAMES.BIRTHDAY && <BirthdayCard duration={1000}/> }
+                    <div className={styles.cards} currentcard={(currentCard)}>
+                        {currentCard === CARD_NAMES.BIRTHDAY && <BirthdayCard />}
                         {currentCard === CARD_NAMES.FAMILY && <FamilyCard />}
                         {currentCard === CARD_NAMES.PLENER && <PlenerCard />}
                         {currentCard === CARD_NAMES.SCHOOL && <SchoolCard />}

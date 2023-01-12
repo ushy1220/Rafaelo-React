@@ -2,7 +2,7 @@
 
 .left, .middle, .right {
     height: 900px;
-    border: 1px solid white;
+
 }
 
 /*
@@ -35,8 +35,17 @@
     position: absolute;
     margin-top: 100px;
 }
+/*
+.cards {
+    display: flex;
+    position: absolute;
+    width: 700px;
+    margin-left: -145px;
+    justify-content: center;
 
-
+    border: 5px solid black;
+}
+*/
 .birthday {
     background-color: rgb(217, 255, 0);
     
@@ -56,3 +65,4 @@
     background-color: rgb(233, 17, 28);
     
 }
+

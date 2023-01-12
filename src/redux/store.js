@@ -3,9 +3,12 @@ import { legacy_createStore as createStore} from 'redux';
 const reducer = (state, action) => {
   switch(action.type) {
     case 'ADD_COLUMN':
-      return { ...state, messages: [...state.messages, action.payload]}, console.log('Column has been added');
+      return { ...state, messages: [...state.messages, action.payload]},
+      console.log('Column has been added');
     case 'REMOVE_COLUMN':
-      return { ...state, messages: state.messages.filter(message => message.id !== action.payload)};
+      return { ...state, messages: state.messages.filter(message => message.id !== action.payload)}, 
+      console.log('Column has been removed');
+    default: ;
   }
   return state;
 };

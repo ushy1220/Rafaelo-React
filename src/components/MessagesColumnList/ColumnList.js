@@ -5,7 +5,6 @@ import Column from '../MessageColumn/Column.js';
 import Snow from "../Weather/Snow/Snow.js";
 import Container from '../Container/Container';
 
-
 const List = () => {
 
     const messages = useSelector(state => state.messages);
@@ -28,13 +27,16 @@ const List = () => {
 					<h2 className={styles.title}>Wiadomości</h2>
 				</header>
 				<section className={styles.messages}>
-					{messages.map(message => <li key={message.id} className={styles.mess}><Column {...message} />
-					<button className={styles.exit} onClick={() => removeMess(message.id)}>DELETE</button>
+					{messages.map(message => 
+					<li key={message.id} className={styles.mess}>
+						<Column {...message} />
+						<button className={styles.exit} onClick={() => removeMess(message.id)}>DELETE</button>
 					</li>
 					)}	
 				</section>
 			</div>
 		</Container>
+		
 	</div>
 			
     )

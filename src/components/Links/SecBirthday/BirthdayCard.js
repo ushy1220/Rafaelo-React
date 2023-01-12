@@ -1,6 +1,7 @@
 import styles from './BirthdayCard.module.scss';
 
 const BirthdayCard = () => {
+
     return (
         <section className={styles.container}>
             <div className={styles.content}>
