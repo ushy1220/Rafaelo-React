@@ -62,4 +62,43 @@
     :hover {
       cursor: pointer;
     }
-  }
+}
+
+.table {
+    width: 1200px;
+    border: 2px solid $color-light;
+}
+
+.tableRow th {
+    border: 2px solid $color-light;
+    height: 50px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.tableRow .id {
+    width: 50px;
+}
+
+.tableRow .name {
+    width: 160px;
+}
+
+.tableRow .email {
+    width: 160px;
+}
+
+.tableRow .content {
+
+}
+
+.tableRow .date {
+    width: 160px;
+}
+
+.tableBody td {
+    font-size: 20px;
+    padding: 15px;
+    overflow: auto;
+    border: 2px solid $color-light;
+}

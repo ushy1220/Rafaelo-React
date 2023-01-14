@@ -22,7 +22,7 @@ const Form = () => {
             setContent('');
 
             //send message to database
-            const url = "http://localhost/rafaelo_messages.php";
+            const url = "http://localhost/rafaeloApi/rafaelo_messages.php";
             let fData = new FormData();
             fData.append('name', name);
             fData.append('email', email);

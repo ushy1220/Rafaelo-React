@@ -90,6 +90,8 @@ yarn add clsx
 
 yarn add axios
 
+conected with DB-SQL
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
 
 <link href="https://fonts.googleapis.com/css?family=Nerko+One" rel="stylesheet">
