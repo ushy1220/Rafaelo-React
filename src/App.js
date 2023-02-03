@@ -7,6 +7,7 @@ import ColumnList from "./components/MessagesColumnList/ColumnList.js";
 import { Routes, Route } from 'react-router-dom';
 import Home from "./components/Home/Home.js";
 import AboutUs from './components/AboutUs/AboutUs.js';
+import Login from "./components/Login/Login";
 //import { useState } from "react";
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
     <Nav /> 
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
       <Route path="/home" element={<Home />} />
       <Route path="/mess" element={<ColumnList />} />
       <Route path="/about" element={<AboutUs />} />

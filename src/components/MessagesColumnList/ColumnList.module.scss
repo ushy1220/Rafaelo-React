@@ -1,7 +1,6 @@
 @import '../../styles/settings.scss';
 
 .wrapper {
-    width: 100%;
     height: 97vh;
     background: none;
     align-items: center;
@@ -80,25 +79,25 @@
     width: 50px;
 }
 
-.tableRow .name {
+.tableRow .name, .email, .date, .deleteMess {
     width: 160px;
 }
 
-.tableRow .email {
-    width: 160px;
-}
-
-.tableRow .content {
-
-}
-
-.tableRow .date {
-    width: 160px;
-}
-
-.tableBody td {
+.tableBody tr td {
     font-size: 20px;
     padding: 15px;
     overflow: auto;
     border: 2px solid $color-light;
+    max-width: 300px;
+    max-height: 100px;
+    //overflow-y: scroll;
+}
+
+.tableBody button {
+    background-color: $color-warning;
+    border-radius: 10px;
+    box-shadow: 0 0 0.2em ;
+    :hover {
+        cursor: pointer;
+    }
 }

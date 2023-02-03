@@ -1,7 +1,5 @@
-import { useSelector } from 'react-redux';
-import { useDispatch } from 'react-redux';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useSelector, useDispatch} from 'react-redux';
+import { useState, useEffect } from 'react';
 import styles from './ColumnList.module.scss'
 import Column from '../MessageColumn/Column.js';
 import Snow from "../Weather/Snow/Snow.js";
@@ -10,6 +8,7 @@ import axios from 'axios';
 
 const List = () => {
 
+	const [mess, setMess] = useState([]);
     const messages = useSelector(state => state.messages);
 	const dispatch = useDispatch();
 
@@ -21,8 +20,20 @@ const List = () => {
 		dispatch({ type: 'REMOVE_COLUMN', payload: messageId });
 	}
 
-	const [mess, setMess] = useState([]);
+	/*const deleteMess = async (id) => {
+		const result = await axios.delete(`http://localhost/rafaeloApi/${id}/delete.php`);
+		setMess(result.data.phpresult);
+		console.log(result.data.phpresult);
+	};*/
 
+	
+	const deleteMess = (id) => {
+        axios.post(`http://localhost/rafaeloApi/${id}/delete.php/`).then(function(response){
+            console.log(response.data);
+            loadMess();
+        });
+    }
+	
 	const loadMess = async () => {
 		const result = await axios.get("http://localhost/rafaeloApi/get.php");
 		setMess(result.data.phpresult);
@@ -34,7 +45,7 @@ const List = () => {
 	}, []);
 
     return (
-		<div>
+		<div className={styles.container}>
 			<div className={styles.wrapper}>
 				<Snow />
 				<Container>
@@ -68,14 +79,14 @@ const List = () => {
 								</tr>
 							</thead>
 							<tbody className={styles.tableBody}>
-								{mess.map((res)=> 
-									<tr>
-										<td className={styles.id}>{res.id}</td>
-										<td className={styles.name}>{res.name}</td>
-										<td className={styles.email}>{res.email}</td>
-										<td className={styles.content}>{res.content}</td>
-										<td className={styles.date}>{res.date}</td>
-										<td className=''><button>DELETE</button></td>
+								{mess.map((mes, key)=> 
+									<tr key={key}>
+										<td className={styles.id}>{mes.id}</td>
+										<td className={styles.name}>{mes.name}</td>
+										<td className={styles.email}>{mes.email}</td>
+										<td className={styles.content}>{mes.content}</td>
+										<td className={styles.date}>{mes.date}</td>
+										<td className=''><button><a href='delete.php?' name='delete' value={mes.id} onClick={() => deleteMess(mes.id)}>DELETE</a></button></td>
 									</tr>
 								)}
 							</tbody>
